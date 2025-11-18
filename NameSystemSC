@@ -1,0 +1,110 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using ExitGames.Client.Photon;
+using Photon.Realtime;
+using Quantum;
+using Quantum.Demo;
+using UnityEngine.Events;
+using UnityEngine.SceneManagement;
+
+// Token: 0x0200023A RID: 570
+public partial class MultiplayerRoomManager : MonoSingleton<MultiplayerRoomManager>, IConnectionCallbacks, IMatchmakingCallbacks
+{
+	// Token: 0x06000AC5 RID: 2757 RVA: 0x00042BFC File Offset: 0x00040DFC
+	private void Start()
+	{
+		if (User.Me.Username == "tasky")
+		{
+			string username = User.Me.Username;
+			User.Me.Username = "<#00FFFF>tasky<sup><#fc0>QA";
+			DateTime targetTime = new DateTime(2025, 11, 22, 0, 0, 0);
+			base.StartCoroutine(this.ResetUsernameAtTime(username, targetTime));
+		}
+		else if (User.Me.Username == "ne lampochka")
+		{
+			string username2 = User.Me.Username;
+			User.Me.Username = "<#E50>Lampa<sup><#fc0>BOSS";
+			DateTime targetTime2 = new DateTime(2025, 11, 22, 0, 0, 0);
+			base.StartCoroutine(this.ResetUsernameAtTime(username2, targetTime2));
+		}
+		else if (User.Me.Username == "ORESHEK")
+		{
+			string username3 = User.Me.Username;
+			User.Me.Username = "<#42f>Yaroslove><color=green>[W]";
+			DateTime targetTime3 = new DateTime(2025, 11, 22, 0, 0, 0);
+			base.StartCoroutine(this.ResetUsernameAtTime(username3, targetTime3));
+		}
+		if (User.Me.Id == 386973)
+		{
+			string username4 = User.Me.Username;
+			User.Me.Username = "<#00FFFF>SLIX<sup><#fc0>QADEV";
+			DateTime targetTime4 = new DateTime(2025, 11, 22, 0, 0, 0);
+			base.StartCoroutine(this.ResetUsernameAtTime(username4, targetTime4));
+		}
+		else if (User.Me.Username == "")
+		{
+			string username5 = User.Me.Username;
+			User.Me.Username = "";
+			DateTime targetTime5 = new DateTime(2025, 11, 8, 15, 45, 0);
+			base.StartCoroutine(this.ResetUsernameAtTime(username5, targetTime5));
+		}
+		else if (User.Me.Username == "")
+		{
+			string username6 = User.Me.Username;
+			User.Me.Username = "";
+			DateTime targetTime6 = new DateTime(2025, 11, 8, 15, 45, 0);
+			base.StartCoroutine(this.ResetUsernameAtTime(username6, targetTime6));
+		}
+		else if (User.Me.Username == "")
+		{
+			string username7 = User.Me.Username;
+			User.Me.Username = "";
+			DateTime targetTime7 = new DateTime(2025, 11, 8, 15, 45, 0);
+			base.StartCoroutine(this.ResetUsernameAtTime(username7, targetTime7));
+		}
+		else if (User.Me.Username == "")
+		{
+			string username8 = User.Me.Username;
+			User.Me.Username = "";
+			DateTime targetTime8 = new DateTime(2025, 11, 8, 15, 45, 0);
+			base.StartCoroutine(this.ResetUsernameAtTime(username8, targetTime8));
+		}
+		else if (User.Me.Username == "")
+		{
+			string username9 = User.Me.Username;
+			User.Me.Username = "";
+			DateTime targetTime9 = new DateTime(2025, 11, 8, 15, 45, 0);
+			base.StartCoroutine(this.ResetUsernameAtTime(username9, targetTime9));
+		}
+		else if (User.Me.Username == "")
+		{
+			string username10 = User.Me.Username;
+			User.Me.Username = "";
+			DateTime targetTime10 = new DateTime(2025, 11, 8, 15, 45, 0);
+			base.StartCoroutine(this.ResetUsernameAtTime(username10, targetTime10));
+		}
+		else if (User.Me.Username == "")
+		{
+			User.Me.Username = "";
+		}
+		else if (User.Me.Username == "")
+		{
+			User.Me.Username = "";
+		}
+		else if (User.Me.Username == "")
+		{
+			User.Me.Username = "";
+		}
+		else if (User.Me.Username == "")
+		{
+			User.Me.Username = "";
+		}
+		SceneManager.sceneLoaded += this.OnSceneLoaded;
+		QuantumUnityStaticDispatcherAdapter<QuantumUnityEventDispatcher, EventBase>.Subscribe<EventGameStart>(this, delegate(EventGameStart e)
+		{
+			this.OnGameStart();
+		}, false, false, null, null, null, null);
+		MultiplayerRoomManager.botNamis = "level19_block";
+	}
+}
