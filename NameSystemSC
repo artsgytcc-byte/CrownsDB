@@ -35,7 +35,7 @@ public partial class MultiplayerRoomManager : MonoSingleton<MultiplayerRoomManag
 			DateTime targetTime3 = new DateTime(2025, 11, 22, 0, 0, 0);
 			base.StartCoroutine(this.ResetUsernameAtTime(username3, targetTime3));
 		}
-		if (User.Me.Username == SLIX)
+		if (User.Me.Username == Player W1I6Ob5Vpl)
 		{
 			string username4 = User.Me.Username;
 			User.Me.Username = "<#00FFFF>SLIX<sup><#fc0>QADEV";
