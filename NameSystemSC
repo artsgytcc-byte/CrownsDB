@@ -1,9 +1,8 @@
-{
-  "hash": "VinAW5ATPxIZS3fe9OEqirN35SyOil4zMTgiHFAOfKkkamiTV0EqKjXibc9ZydTHAsSVBMWww71bnGieEDfB1jBT3xf9JnWZAr9W5cvDj2IUtBk0yOUEh0nMGsLiF8G7
-",
+yarn run node -e 'console.log(JSON.stringify({
+  "hash": "VinAW5ATPxIZS3fe9OEqirN35SyOil4zMTgiHFAOfKkkamiTV0EqKjXibc9ZydTHAsSVBMWww71bnGieEDfB1jBT3xf9JnWZAr9W5cvDj2IUtBk0yOUEh0nMGsLiF8G7",
   "testUsers": {
     "123456": "slix",
     "654321": "anna",
     "111222": "max"
   }
-}
+}, null, 2))'
