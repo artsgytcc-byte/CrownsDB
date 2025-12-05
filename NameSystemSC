@@ -1,8 +1,31 @@
-yarn run node -e 'console.log(JSON.stringify({
-  "hash": "VinAW5ATPxIZS3fe9OEqirN35SyOil4zMTgiHFAOfKkkamiTV0EqKjXibc9ZydTHAsSVBMWww71bnGieEDfB1jBT3xf9JnWZAr9W5cvDj2IUtBk0yOUEh0nMGsLiF8G7",
-  "testUsers": {
-    "123456": "slix",
-    "654321": "anna",
-    "111222": "max"
-  }
-}, null, 2))'
+{
+  "photon": {
+    "appId": "f211e8a3-4510-45cb-bd4f-40f7c7852f26",
+    "appVersion": "0.56", 
+    "region": "eu",
+    "lobby": {
+      "name": "MainLobby",
+      "maxPlayers": 32
+    }
+  },
+  "match": {
+    "map": "BlockDash",
+    "mode": "Race",
+    "maxRounds": 1,
+    "gravity": 9.81,
+    "speedMultiplier": 1.0
+  },
+  "players": [
+    {
+      "id": 1,
+      "name": "#1 lemond",
+      "skin": "Fire Dragon"
+    },
+    {
+      "id": 2,
+      "name": "Pixel",
+      "skin": "RedKnight"
+    }
+  ]
+
+}
