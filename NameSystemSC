@@ -5,8 +5,7 @@
     "region": "eu",
     "lobby": {
       "name": "MainLobby",
-      "maxPlayers": 32
-    }
+      "maxPlayers"
   },
   "match": {
     "map": "BlockDash",
